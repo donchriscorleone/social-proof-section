@@ -1,0 +1,188 @@
+:root {
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-gray-magenta: hsl(303,10%, 53%);
+    --light-gray-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*, ::before, ::after {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;;
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    .heading h1 {
+        width: 80%;
+        font-size: 2.2em;
+        color: var(--dark-magenta);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .heading p {
+        margin-top: 10px;
+        font-size: 1em;
+        text-align: center;
+        line-height: 22px;
+        color: var(--dark-gray-magenta);
+    }
+
+    .heading {
+        margin-bottom: 2.7em;
+    }
+
+    .rate-card {
+        height: 60px;
+        margin: 1.2em auto;
+        text-align: center;
+        width: 90%;
+        background-color: var(--light-gray-magenta);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rates {
+        margin-bottom: 40px;
+    }
+
+    .card {
+        margin: 10px auto;
+        background-color: var(--dark-magenta);
+        color: var(--white);
+        border-radius: 8px;
+        display: grid;
+        align-items: center;
+        padding: 2em;
+        height: 60%;
+    }
+
+    .card .profile {
+        border-radius: 50%;
+    }
+
+    .card-heading {
+        display: flex;
+        align-items: center;
+        gap: 1.3em;
+    }
+
+    .card-heading p {
+        color: var(--soft-pink);
+    }
+
+    .card-body p {
+        font-size: .9em;
+        line-height: 1.9em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        width: 80vw;
+        height: calc(80vh + 70px);
+        margin: 4vw auto 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .heading h1{
+        width: 80%;
+        font-size: 2.5em;
+        color: var(--dark-magenta);
+        font-weight: 700;
+        margin-bottom: .2em;
+    }
+
+    .heading p {
+        font-size: .9em;
+        line-height: 22px;
+        color: var(--dark-gray-magenta);
+    }
+
+    .rates {
+        display: grid;
+        align-items: center;
+    }
+
+    .rate-card {
+        border-radius: 10px;
+        background-color: var(--light-gray-magenta);
+        width: 80%;
+        height: 70%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rate-2 {
+        margin-left: 90px;
+    }
+
+    .rate-3 {
+        margin-left: 150px;
+    }
+
+    .testimonials {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        gap: 1.2em;
+    }
+
+    .card {
+        background-color: var(--dark-magenta);
+        color: var(--white);
+        border-radius: 8px;
+        display: grid;
+        align-items: center;
+        padding: 2em;
+        height: 60%;
+    }
+
+    .card .profile {
+        border-radius: 50%;
+    }
+
+    .card-heading {
+        display: flex;
+        align-items: center;
+        gap: 1.3em;
+    }
+
+    .card-heading p {
+        color: var(--soft-pink);
+    }
+
+    .card-body p {
+        font-size: .8em;
+        line-height: 1.9em;
+    }
+
+    .card-2 {
+        margin-top: 35px;
+    }
+
+    .card-3 {
+        margin-top: 70px;
+    }
+}
